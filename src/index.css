@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../public/assets/fonts/Montserrat-Regular.ttf);
+}
+
+::selection{
+  background-color: #f5f5dc;
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Montserrat;
+}
+
+.mainWrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header,
+.footer{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.mainContainer{
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
